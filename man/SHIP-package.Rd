@@ -6,25 +6,29 @@ SHrinkage covariance Incorporating Prior knowledge
 }
 \description{
 The SHIP-package implements the shrinkage estimator of a covariance matrix
-given any positive definite target covariance matrix, such as described by
-Schaefer and Strimmer in 2005. It proposes in addition several targets based
-on the knowledge extracted from public databases such as KEGG.
+given any covariance target, such as described by Schaefer and Strimmer in 2005. 
+In addition, it proposes several targets based on biological knowledge extracted 
+from the public database KEGG.
 }
 \details{
-To use the shrinkage estimator, one should just have at hand a dataset in the form
-of a \eqn{n \times p}{n x p} matrix, and a target covariance matrix.
+To use the shrinkage estimator, one should just have at hand a data set in the form
+of a \eqn{n \times p}{n x p} matrix, and a covariance target.
 
-If one wish to use the proposed targets, they should also be able to produce for each
-gene the patways to which ot belongs. This information can for example be found in such
-librairies as hgu133plus2.db.
+If one wishes to use the proposed targets, the data set should be compatible with KEGG,
+i.e. it should be possible to extract for each gene the pathways it belongs to. 
+This information, for example, can be found in libraries such as hgu133plus2.db.
 }
 \author{
 Monika Jelizarow and Vincent Guillemot
 }
 \references{
-Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+\itemize{
+\item J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32 }
+Statist. Appl. Genet. Mol. Biol. 4:32.
+\item M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
+ Over-optimism in bioinformatics: an illustration. Bioinformatics. Accepted.
+}}
 \keyword{ package }
 \examples{
 # A short example on a toy dataset

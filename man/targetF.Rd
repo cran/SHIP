@@ -4,15 +4,15 @@
 Computation of target F ('constant correlation model').
 }
 \description{
-The \eqn{p \times p}{p x p} target \eqn{\bf F}{F} is computed from the 
-\eqn{n \times p}{n x p} data matrix \eqn{\bf X}{X}.
+The \eqn{p \times p}{p x p} target F is computed from the 
+\eqn{n \times p}{n x p} data matrix.
 It is defined as follows (\eqn{i,j = 1,...,p}{i,j = 1,...,p}):
 \deqn{t_{ij}=\left\{
 \begin {array} {ll}
 s_{ii}\;&\mbox{if}\;i=j\\
 \bar{r}\sqrt{s_{ii}s_{jj}}\;&\mbox{if}\;i\neq j\\
 \end {array}
-\right.}{tij = sii if i=j ; r\sqrt{s_{ii}s_{jj}} otherwise}, where \eqn{\bar{r}}{r} 
+\right.}{tij = sii if i=j ; r\sqrt{s_{ii}s_{jj}} otherwise} where \eqn{\bar{r}}{r} 
 is the average of sample correlations and \eqn{s_{ij}}{sij} denotes the entry of 
  the unbiased covariance matrix in row \eqn{i}{i}, column \eqn{j}{j}.
 }
@@ -30,9 +30,9 @@ A \eqn{p \times p}{p x p} matrix.
 }
 
 \references{
-Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32 }
+Statist. Appl. Genet. Mol. Biol. 4:32. }
 
 \author{
 Monika Jelizarow and Vincent Guillemot

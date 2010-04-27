@@ -1,26 +1,26 @@
 \name{shrink.estim}
 \alias{shrink.estim}
 \title{
-Shrinkage estimator of the covariance matrix of a given dataset given a target matrix
+Shrinkage estimator of the covariance matrix, given a data set and a covariance target.
 }
 \description{
-The shrinkage estimator is computed independantly of the nature of the target.
+The shrinkage estimator is computed independently of the target's nature.
 }
 \usage{
 shrink.estim(x, tar)
 }
 \arguments{
-  \item{x}{ An \eqn{n \times p}{n x p} matrix. (the dataset)
+  \item{x}{ A \eqn{n \times p}{n x p} matrix (the data set) .
 }
-  \item{tar}{A \eqn{p \times p}{p x p} positive definite matrix. (the target covariance matrix)}
+  \item{tar}{A \eqn{p \times p}{p x p} matrix (the covariance target).}
 }
 \value{
 A \eqn{p \times p}{p x p} shrinkage covariance matrix and the estimated \eqn{\lambda}{lambda}.
 }
 \references{
-Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32 }
+Statist. Appl. Genet. Mol. Biol. 4:32. }
 \author{
 Monika Jelizarow and Vincent Guillemot
 }

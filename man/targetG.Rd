@@ -4,8 +4,8 @@
 Computation of target G ('knowledge-based constant correlation model').
 }
 \description{
-The \eqn{p \times p}{p x p} target \eqn{\bf G}{ G} is computed from the 
-\eqn{n \times p}{n x p} data matrix \eqn{\bf X}{ X}.
+The \eqn{p \times p}{p x p} target G is computed from the 
+\eqn{n \times p}{n x p} data matrix.
 It is defined as follows (\eqn{i,j = 1,...,p}{i,j = 1,...,p}):
 \deqn{t_{ij}=\left\{
 \begin {array} {ll}
@@ -28,7 +28,7 @@ targetG(x, genegroups)
 \arguments{
   \item{x}{A \eqn{n \times p}{n x p} data matrix.
 }
-  \item{genegroups}{A list of genes obtained using the database KEGG, where each entry itsself is a list of pathway names
+  \item{genegroups}{A list of genes obtained using the database KEGG, where each entry itself is a list of pathway names
    this genes belongs to. If a gene does not belong to any gene functional group, the entry is NA.
 }
 }
@@ -38,13 +38,11 @@ A \eqn{p \times p}{p x p} matrix.
 }
 \references{
 \itemize{
-\item Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+\item J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32
-\item
- M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
- Over-optimism in bioinformatics: an illustration. Technical Report 81, Department 
- of Statistics, LMU. Submitted.
+Statist. Appl. Genet. Mol. Biol. 4:32. 
+\item M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
+ Over-optimism in bioinformatics: an illustration. Bioinformatics. Accepted.
 }
 }
 

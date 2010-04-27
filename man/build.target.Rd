@@ -21,7 +21,7 @@ vector of pathway IDs.
 }
   \item{type}{Character string specifying the wished target: "D" for a diagonal target, 
   "cor" for a correlation target, "G", "Gpos" and "Gstar" for a G-type target 
-  (see Jelizarow et al, 2010) and "F" for an F-target.
+  (see Jelizarow et al, 2010) and "F" for a F-target.
       
 }
 }
@@ -30,11 +30,10 @@ A \eqn{p \times p}{p x p} target covariance matrix of a certain type.
 }
 \references{
  M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
- Over-optimism in bioinformatics: an illustration. Technical Report 81, Department 
- of Statistics, LMU. Submitted.
+ Over-optimism in bioinformatics: an illustration. Bioinformatics. Accepted.
 }
 \author{
-Monika Jelizarow and Vincent Guillemot
+Vincent Guillemot
 }
 \seealso{
 \code{\link{targetCor}}, \code{\link{targetD}}, \code{\link{targetF}}, 

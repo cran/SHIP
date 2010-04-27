@@ -4,8 +4,8 @@
 Computation of the target Cor.
 }
 \description{
-The \eqn{p \times p}{p x p} target \eqn{\bf Cor}{ Cor} is computed from the 
-\eqn{n \times p}{n x p} data matrix \eqn{\bf X}{X}. It it a modified version of 
+The \eqn{p \times p}{p x p} target Cor is computed from the 
+\eqn{n \times p}{n x p} data matrix. It it a modified version of 
 target G. In particular, it tests the correlations (with a significance level of 
 0.05) and sets the non-significant correlations to zero before the mean correlation 
 \eqn{\bar{r}}{r} is computed.
@@ -18,7 +18,7 @@ targetCor(x, genegroups)
   \item{x}{A \eqn{n \times p} data matrix.
 }
   \item{genegroups}{A list of genes obtained using the database KEGG, where each 
-  entry itsself is a list of pathway names this genes belongs to. If a gene does 
+  entry itself is a list of pathway names this genes belongs to. If a gene does 
   not belong to any gene functional group, the entry is NA.
 }
 }
@@ -28,9 +28,9 @@ A \eqn{p \times p}{p x p} matrix.
 }
 
 \references{
-Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32
+Statist. Appl. Genet. Mol. Biol. 4:32.
 }
 \author{
 Monika Jelizarow and Vincent Guillemot

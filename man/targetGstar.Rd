@@ -4,8 +4,8 @@
 Computation of the target Gstar.
 }
 \description{
-The \eqn{p \times p}{p x p} target \eqn{\bf Gstar}{Gstar} is computed from the 
-\eqn{n \times p}{n x p} data matrix \eqn{\bf X}{X}. It it a modified version of 
+The \eqn{p \times p}{p x p} target Gstar is computed from the 
+\eqn{n \times p}{n x p} data matrix. It it a modified version of 
 target G. In particular, it involves two parameters for the correlation (a positive 
 and a negative one) instead of the single parameter \eqn{\bar{r}}{r} in order to 
 account for negatively correlated genes within the same pathway
@@ -18,7 +18,7 @@ targetGstar(x, genegroups)
   \item{x}{A \eqn{n \times p} data matrix.
 }
   \item{genegroups}{A list of genes obtained using the database KEGG, where each 
-  entry itsself is a list of pathway names this genes belongs to. If a gene does 
+  entry itself is a list of pathway names this genes belongs to. If a gene does 
   not belong to any gene functional group, the entry is NA.
 }
 }
@@ -29,13 +29,11 @@ A \eqn{p \times p}{p x p} matrix.
 
 \references{
 \itemize{
-\item Schaefer, J., and K. Strimmer. 2005. A shrinkage approach to large-scale 
+\item J. Schaefer and K. Strimmer, 2005. A shrinkage approach to large-scale 
 covariance matrix estimation and implications for functional genomics. 
-Statist. Appl. Genet. Mol. Biol. 4: 32
-\item
- M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
- Over-optimism in bioinformatics: an illustration. Technical Report 81, Department 
- of Statistics, LMU. Submitted.
+Statist. Appl. Genet. Mol. Biol. 4:32. 
+\item M. Jelizarow, V. Guillemot, A. Tenenhaus, K. Strimmer, A.-L. Boulesteix, 2010. 
+ Over-optimism in bioinformatics: an illustration. Bioinformatics. Accepted.
 }}
 
 \author{
